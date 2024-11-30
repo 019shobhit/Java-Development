@@ -1,0 +1,21 @@
+body{
+	color:red;
+	
+	background:+#212121;
+}	
+.x{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}	
+.menu_con ul {
+	list-style-type:none;
+	display : flex;
+}
+.menu_con  ul li a{
+	display: block;
+	margin : 10px 10px;
+	
+	
+}
