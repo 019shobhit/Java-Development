@@ -8,7 +8,12 @@
   </head>
   <body>
   <%@include file = "header.jsp" %>
-    <h1>Hello, world!</h1>
+    
+    <div style="height:70vh" class="content_container py-4 d-flex flex-column justify-content-center align-items-center">
+    	<a href="<%=application.getContextPath() %>/feedback.jsp" class="btn btn-light">Go to Feedback form</a>
+    </div>
+    
+    
     
     <%@include file="comp/linkjs.jsp" %>
   </body>
