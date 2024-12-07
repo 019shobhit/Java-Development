@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>FirstSpringProject</artifactId>
+	<artifactId>JpaProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>FirstSpringProject</name>
+	<name>JpaProject</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -30,11 +30,10 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-	<!--	<dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-	-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -49,11 +48,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.example</groupId>
-			<artifactId>JpaProject</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
