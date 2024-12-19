@@ -20,5 +20,11 @@
         		<value>MCA</value>
         	</property>
         </bean>
+        <bean class="springCore.Student" name="stu2">
+        	<property name="studentId" value="30"/>
+        	<property name="studentName" value="Abhishek chauhan"/>
+        	<property name="studentCourse" value="Gym"/>
+        </bean>
+        <bean class="springCore.Student" name="stu3" p:studentId="123" p:studentName="Ayush Mota" p:studentCourse="BBA"/>
         
 </beans>
