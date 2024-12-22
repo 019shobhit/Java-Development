@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+        
+        <bean class="com.springcore.ci.temp" name = "temp" c:name="Shobhit Chauhan"/>
+        
+        <bean class="com.springcore.ci.Person" name = "person1" >
+        	<constructor-arg name="name" value="shobhit"/>
+        	<constructor-arg name ="id" value="44" type="int"/>
+        	<constructor-arg name="t" ref="temp"/>
+        	<constructor-arg name="list" >
+        		<list>
+        			<value>1. abhishek</value>
+        			<value>2. Ayush</value>
+        			<value>3. Akash</value>
+        			<value>4. Rohit</value>
+        			<value>5. Naveen</value>
+        		</list>
+        	</constructor-arg>
+        </bean>
+        
+        <bean class="com.springcore.ci.Addition" name = "add">
+        	<constructor-arg  value="10" type="int"/>
+        	<constructor-arg  value="15" />
+        </bean>
+        
+</beans>
