@@ -10,6 +10,10 @@ public class Test {
 		Samosa s = (Samosa) con.getBean("s1");
 		System.out.println(s);
 		con.registerShutdownHook();
+		
+		System.out.println("++++++++++++++++++++++++++++++++++++++++++++");
+		Pepsi p = (Pepsi) con.getBean("p1");
+		System.out.println(p);
 	}
 }
 	
