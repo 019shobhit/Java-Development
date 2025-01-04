@@ -8,19 +8,12 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
-        <!-- <context:annotation-config/> -->
         
-       <!-- <bean class="com.springcore.lifecycle.Samosa" name ="s1" init-method="init" destroy-method="destroy">
-       		<property name="price" value="12.5"/>
+       <bean class="com.springcore.auto.wire.Address" name="address">
+       		<property name="gaon" value="Barka"/>
+       		<property name="city" value="Baghpat"/>
        </bean>
        
-       <bean class="com.springcore.lifecycle.Pepsi" name="p1">
-       		<property name="price" value="40"/>
-       </bean> -->
-       
-       <bean class="com.springcore.lifecycle.Example" name="e1">
-       		<property name="subject" value="DSA"/>
-       </bean>
-       <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
-        
+       <bean class="com.springcore.auto.wire.Emp" name="emp1" autowire="constructor"/>
+               
 </beans>
