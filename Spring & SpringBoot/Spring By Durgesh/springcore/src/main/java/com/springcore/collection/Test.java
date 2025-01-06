@@ -14,6 +14,7 @@ public class Test {
         System.out.println(emp1.getName());
         System.out.println(emp1.getPhones());
         System.out.println(emp1.getAddresses());
+        System.out.println(emp1.getPhones().getClass().getName());
 
     }
 }
