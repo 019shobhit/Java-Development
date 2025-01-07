@@ -9,6 +9,7 @@ public class Main {
 		
 		Person p = con.getBean("p",Person.class);
 		System.out.println(p);
+		System.out.println(p.getMap());
 	}
 
 }

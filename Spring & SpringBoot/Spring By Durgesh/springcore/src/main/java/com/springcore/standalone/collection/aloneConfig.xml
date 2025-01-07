@@ -19,10 +19,17 @@
         <value>Mota</value>
         <value>Rohit</value>
     </util:list>
+    
+    <util:map map-class="java.util.HashMap" id="map1">
+    	<entry key="Spring framework" value="12000"/>
+    	<entry key="SpringBoot" value="20000"/>
+    	<entry key="MCA" value="1400000"/>
+    </util:map>
 
     <!-- Injecting the list into the Person bean -->
     <bean class="com.springcore.standalone.collection.Person" name="p">
         <property name="friends" ref="list1"/>
+        <property name="map" ref="map1"></property>
     </bean>
 
 </beans>
