@@ -7,13 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Welcome to profile page</h1>
-	
-		<% String myname = (String) session.getAttribute("name_key");%>
-			<h3>Welcome : <%=myname %></h3>
-	
+		
+		<h1>Welcome to Home Page</h1>
+				<% String myname = (String) session.getAttribute("name_key");%>
+		
+		<h3>Welcome : <%=myname %></h3>
+		
+		
 	<br>
-	<a href="home.jsp">Home</a>
+	<a href="profile.jsp">Profile</a>
 	&nbsp &nbsp
 	<a href="about-us.jsp">About us</a>
 </body>
