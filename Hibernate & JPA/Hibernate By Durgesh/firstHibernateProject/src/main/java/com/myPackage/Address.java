@@ -1,5 +1,6 @@
 package com.myPackage;
 
+import java.util.Arrays;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -82,6 +83,11 @@ public class Address {
 	}
 	public void setImg(byte[] img) {
 		this.img = img;
+	}
+	@Override
+	public String toString() {
+		return "Address [addId=" + addId + ", gaon=" + gaon + ", jilla=" + jilla + ", isOpen=" + isOpen + ", x=" + x
+				+ ", date=" + date + ", img=" + Arrays.toString(img) + "]";
 	}
 	
 }

@@ -12,12 +12,16 @@ import javax.persistence.Table;
 public class Student {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-//	@Column
 	private String name;
-//	@Column
-	private String city;
+	private Certificate certi;
+	
+	public Certificate getCerti() {
+		return certi;
+	}
+	public void setCerti(Certificate certi) {
+		this.certi = certi;
+	}
 	public Student() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -26,7 +30,6 @@ public class Student {
 		super();
 		this.id = id;
 		this.name = name;
-		this.city = city;
 	}
 	public int getId() {
 		return id;
@@ -40,15 +43,10 @@ public class Student {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getCity() {
-		return city;
-	}
-	public void setCity(String city) {
-		this.city = city;
-	}
+	
 	@Override
 	public String toString() {
-		return "Student [id=" + this.id + ", name=" + this.name + ", city=" + this.city + "]";
+		return "Student [id=" + this.id + ", name=" + this.name + "]";
 	}
 
 }
