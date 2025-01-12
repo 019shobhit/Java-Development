@@ -20,7 +20,6 @@ public class App
         System.out.println( "Processing ..." );
         
         Student st = new Student();
-        st.setCity("Baghpat");
         st.setId(2);
         st.setName("Shobhit");
         System.out.println(st);
