@@ -37,12 +37,12 @@ public class Main {
 //		list.add(ans1);
 //		list.add(ans2);
 //		list.add(ans3);
-		
+//		
 //		q1.setAnswers(list);
 		
 		
 		Session s = factory.openSession();
-		Transaction tx = s.beginTransaction();
+//		Transaction tx = s.beginTransaction();
 		
 		
 //		s.save(q1);
@@ -51,13 +51,12 @@ public class Main {
 //		s.save(ans3);
 		
 		Question q = (Question) s.get(Question.class, 1212);
+		System.out.println(q.getQuestion_id());
 		System.out.println(q.getQuestion());
-		for(Answer a : q.getAnswers()) {
-			System.out.println(a.getAnswer());
-		}
+		System.out.println(q.getAnswers().size());
 		
 		
-		tx.commit();
+//		tx.commit();
 		s.close();
 		factory.close();
 		
