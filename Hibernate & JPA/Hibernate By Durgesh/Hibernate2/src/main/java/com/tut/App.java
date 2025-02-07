@@ -18,6 +18,11 @@ public class App
     	s1.setName("Shobhit");
     	s1.setCity("Baghpat");
     	
+    	Certificate c = new Certificate();
+    	c.setCourseId(111);
+    	c.setCourseName("Java Development");
+    	s1.setCerti(c);
+    	
     	
         SessionFactory factory = new Configuration().configure("com/tut/hibernate.cfg.xml").buildSessionFactory();
         Session s = factory.openSession();
