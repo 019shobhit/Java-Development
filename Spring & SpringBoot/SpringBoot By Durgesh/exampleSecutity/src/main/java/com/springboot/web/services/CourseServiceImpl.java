@@ -17,6 +17,7 @@ public class CourseServiceImpl implements CourseService {
 
     @Override
     public List<Course> getCourses() {
+    	String a;
         return cd.findAll();
     }
     

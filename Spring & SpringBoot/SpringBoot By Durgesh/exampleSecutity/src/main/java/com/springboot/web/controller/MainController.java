@@ -21,21 +21,31 @@ public class MainController {
 	@Autowired
 	private CourseService service;
 
-	
+	public static void temp() {
+		System.out.println("kya hall hai");
+	}
 	@GetMapping("/home")
 	public String home() {
 		System.out.println("this is my home page");
+		System.out.println("this first line");
+		temp();
+		System.out.println("this second line");
+		System.out.println("this third line");
+		
+		
+		
+		
 		return " home page ";
 	}
 	
 	// create Get mapping of courses
 	@GetMapping("/course")
 	public List<Course> GetCourses() {
-		return this.service.getCourses();
+		return service.getCourses();
 	}
 	@GetMapping("/course/{courseId}")
 	public Course GetCourse(@PathVariable String courseId) {
-		return this.service.getCourse(Long.parseLong(courseId));
+		return service.getCourse(Long.parseLong(courseId));
 	}
 	
 	@PostMapping("course")
